@@ -108,6 +108,8 @@ Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`
     
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
 
+|
+|
 
 Install SeisSol
 ---------------
@@ -174,6 +176,7 @@ Update your ``~/.bashrc`` (or your ``setup_spack_seissol.sh``) file as follows
   spack load py-scipy
 
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to recompile SeisSol if needed (e.g. if you want to change DPRECISION or DORDER).
+
 To run SeisSol you can either link the executable (from your scratch file/where your job.sh is)
 
 .. code-block:: bash
