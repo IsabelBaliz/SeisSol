@@ -1,24 +1,24 @@
 ..
-  SPDX-FileCopyrightText: 2019 SeisSol Group
+  SPDX-FileCopyrightText: 2026 SeisSol Group
 
   SPDX-License-Identifier: BSD-3-Clause
   SPDX-LicenseComments: Full text under /LICENSE and /LICENSES/
 
-  SPDX-FileContributor: Author lists in /AUTHORS and /CITATION.cff
+  SPDX-FileContributor: Author lists in /AUTHORS and /CITATION.cff Isabel Reinicke
 
-.. _compile_run_supermuc:
+.. _compile_run_expanse:
 
 
-SuperMUC-NG
-===========
+Expanse-SDSC
+============
 
 Discovering Precompiled SeisSol Modules
 ---------------------------------------
 
-To discover precompiled SeisSol Spack modules on SuperMUC-NG, follow the procedure below.
-Update your ``~/.bashrc`` file as follows:
+To compile SeisSol using Spack modules on Expanse-SDSC (San Diego Supercomputer Center), follow the procedure below.
+Follow the steps for the spack installation here: `Link Text <https://github.com/SeisSol/seissol-spack-aid/blob/main/spack/README.rst>`_
 
-.. code-block:: bash
+Update your ``~/.bashrc`` file as follows (or create a "setup.sh" file including):
 
     # Load Spack
     module purge
