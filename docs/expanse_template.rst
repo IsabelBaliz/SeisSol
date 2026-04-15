@@ -19,26 +19,44 @@ To compile SeisSol using Spack modules on Expanse-SDSC (San Diego Supercomputer 
 
 Follow the steps for the spack installation here `Installation with Spack <https://github.com/SeisSol/seissol-spack-aid/blob/main/spack/README.rst>`_
 which should include:
-module load gcc/10.2.0
-module load openmpi/mlnx/gcc/64/4.1.5a1
-module load cmake/3.21.4
+
+Load necessay modules
+---------------------
+
+.. code-block:: bash
+
+    module load gcc/10.2.0
+    module load openmpi/mlnx/gcc/64/4.1.5a1
+    module load cmake/3.21.4
+
+Clone the `Spack repo <https://github.com/spack/spack.git>`_
+------------------------------------------------------------
+
+.. code-block:: bash
+  git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
+  cd spack
 
 
-git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
-cd spack
-# modify  ~/.spack/packages.yaml to
-packages:
- openmpi:
-  externals:
-  - spec: openmpi@4.1.5
-   prefix: /usr/mpi/gcc/openmpi-4.1.5a1
-  buildable: False
+Modify  ~/.spack/packages.yaml 
+------------------------------
+
+.. code-block:: bash
+  packages:
+   openmpi:
+    externals:
+    - spec: openmpi@4.1.5
+     prefix: /usr/mpi/gcc/openmpi-4.1.5a1
+    buildable: False
+
+Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.git>`_
+--------------------------------------------------------------------------------------
+
+.. code-block:: bash
+  cd
+  git clone --recursive https://github.com/SeisSol/seissol-spack-aid.git
+  cd $HOME/seissol-spack-aid
 
 cd
-git clone --recursive https://github.com/SeisSol/seissol-spack-aid.git
-cd $HOME/seissol-spack-aid
-
- cd
 #module spider openmpi/mlnx/gcc/64
 spack compiler list
 
