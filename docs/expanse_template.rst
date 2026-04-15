@@ -175,6 +175,7 @@ Update your ``~/.bashrc`` (or your ``setup_spack_seissol.sh``) file as follows
 
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to recompile SeisSol if needed (e.g. if you want to change DPRECISION or DORDER).
 To run SeisSol you can either link the executable (from your scratch file/where your job.sh is)
+
 .. code-block:: bash
 
   ln -s /home/<user>/SeisSol/build-release/SeisSol_Release_drome_4_viscoelastic2
@@ -191,6 +192,7 @@ or set its path explicitly **in the slurm file** (job.sh)
   export SEISSOL_EXE=$HOME/SeisSol/build-release/SeisSol_Release_drome_4_viscoelastic2
 
 You can then run SeisSol (e.g. using this in your slurm file job.sh)
+
 .. code-block:: bash
 
   srun --mpi=pmix $SEISSOL_EXE parfile.par
