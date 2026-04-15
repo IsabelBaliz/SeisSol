@@ -77,7 +77,7 @@ Make sure that you have C/C++ and Fortran compilers in your compiler collection
 
   cat $HOME/.spack/linux/compilers.yaml 
 This should show
-^^^^^^^^^^^^
+
 .. code-block:: bash
 
   ...
