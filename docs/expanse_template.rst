@@ -14,12 +14,13 @@ Expanse-SDSC
 
 To compile SeisSol using Spack modules on Expanse-SDSC (San Diego Supercomputer Center), follow the procedure below.
 
-Follow the steps for the spack installation here `Installation with Spack <https://github.com/SeisSol/seissol-spack-aid/blob/main/spack/README.rst>`_
-which should include:
-
 
 Install Spack
 -------------
+
+Follow the steps for the spack installation here `Installation with Spack <https://github.com/SeisSol/seissol-spack-aid/blob/main/spack/README.rst>`_
+which should include:
+
 Load necessay modules
 ^^^^^^^^^^^^^^^^^^^^^
 
