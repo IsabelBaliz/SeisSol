@@ -69,8 +69,8 @@ Type the following to see all compilers avaliable for Spack
   spack compiler list
 
 
-Make sure that you have C/C++ and Fortran compilers in your compiler collection. For example:
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Make sure that you have C/C++ and Fortran compilers in your compiler collection
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
