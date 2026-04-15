@@ -58,13 +58,34 @@ Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.
   cd
   git clone --recursive https://github.com/SeisSol/seissol-spack-aid.git
   cd $HOME/seissol-spack-aid
+  git pull origin master
 
-cd
-#module spider openmpi/mlnx/gcc/64
-spack compiler list
+
+Type the following to see all compilers avaliable for Spack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: bash
+
+  cd
+  spack compiler list
+
 
 Make sure that you have C/C++ and Fortran compilers in your compiler collection. For example:
-cat $HOME/.spack/linux/compilers.yaml (see picture below)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+  cat $HOME/.spack/linux/compilers.yaml (see picture below)
+
+.. code-block:: bash
+
+  ...
+  paths:
+    cc: /usr/bin/gcc
+    cxx: /usr/bin/g++
+    f77: /usr/bin/gfortran
+    fc: /usr/bin/gfortran
+  ...
+
 
 Update your ``~/.bashrc`` file as follows (or create a "setup.sh" file including):
 
