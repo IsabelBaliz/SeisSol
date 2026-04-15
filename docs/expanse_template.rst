@@ -134,9 +134,12 @@ Clone `SeisSol <https://github.com/SeisSol/SeisSol.git>`_
 
 
 
-Configure compilation variables (here example with Release configuration, double precision and polynomial order of degree 4)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Configure compilation variables 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(here example with Release configuration, double precision and polynomial order of degree 4)
+
 .. code-block:: bash
+
   CC=mpicc CXX=mpiCC FC=mpif90 cmake -DNUMA_AWARE_PINNING=ON -DASAGI=ON -DCMAKE_BUILD_TYPE=Release -DHOST_ARCH=rome -DPRECISION=double -DORDER=4 -DGEMM_TOOLS_LIST=PSpaMM ..
 
 
