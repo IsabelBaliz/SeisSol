@@ -74,8 +74,9 @@ Make sure that you have C/C++ and Fortran compilers in your compiler collection.
 
 .. code-block:: bash
 
-  cat $HOME/.spack/linux/compilers.yaml (see picture below)
-
+  cat $HOME/.spack/linux/compilers.yaml 
+should show:
+^^^^^^^^^^^^
 .. code-block:: bash
 
   ...
