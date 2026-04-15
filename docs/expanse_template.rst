@@ -31,7 +31,9 @@ Load necessay modules
 
 Clone the `Spack repo <https://github.com/spack/spack.git>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. code-block:: bash
+
   git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
   cd spack
 
@@ -40,6 +42,7 @@ Modify  ~/.spack/packages.yaml
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
+
   packages:
    openmpi:
     externals:
@@ -51,6 +54,7 @@ Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
+
   cd
   git clone --recursive https://github.com/SeisSol/seissol-spack-aid.git
   cd $HOME/seissol-spack-aid
