@@ -115,6 +115,8 @@ Install SeisSol
 
   spack install seissol-env +mpi +asagi %gcc@10.2.0 ^openmpi@4.1.5
 
+Load necessary modules with spack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
   spack load cmake
@@ -122,16 +124,24 @@ Install SeisSol
   spack load py-numpy
   spack load py-scipy
 
+Clone `SeisSol <https://github.com/SeisSol/SeisSol.git>`_
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
   git clone --recursive https://github.com/SeisSol/SeisSol.git
   cd SeisSol
   mkdir build-release && cd build-release
 
-.. code-block:: bash
 
+
+Configure compilation variables (here example with Release configuration, double precision and polynomial order of degree 4)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: bash
   CC=mpicc CXX=mpiCC FC=mpif90 cmake -DNUMA_AWARE_PINNING=ON -DASAGI=ON -DCMAKE_BUILD_TYPE=Release -DHOST_ARCH=rome -DPRECISION=double -DORDER=4 -DGEMM_TOOLS_LIST=PSpaMM ..
 
+
+Compile SeisSol
+^^^^^^^^^^^^^^^
 .. code-block:: bash
 
   make -j64
