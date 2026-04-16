@@ -118,7 +118,7 @@ Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`
   module load cmake/3.21.4
   
   
-  # Needed for SeisSol
+  # Needed for spack
   export SPACK_ROOT=/home/<user>/spack
   export PATH=$SPACK_ROOT/bin:$PATH
     
