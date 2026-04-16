@@ -43,6 +43,7 @@ Modify  ~/.spack/packages.yaml (or create if non-existing)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
+
   packages:
   openmpi:
    externals:
