@@ -76,6 +76,12 @@ to automatically add the two export lines in your ``~/.bashrc``, or add them man
     
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack commands.
 
+.. code-block:: bash
+  spack 
+
+should provide a list of spack commands and not ``bash: spack: command not found``.
+
+
 Modify  ~/.spack/packages.yaml (or create if non-existing)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
