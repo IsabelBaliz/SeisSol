@@ -98,23 +98,18 @@ This should show
     fc: /usr/bin/gfortran
   ...
 
-Install the packages you will need for the SeisSol installation (using spack)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: bash
 
-  spack install --add cmake
-  spack install python
-  spack install py-numpy
-  spack install py-scipy
 
 Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`` file including)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. code-block:: bash
-
   .. source /home/<user>/spack/share/spack/setup-env.sh
   .. module load gcc/10.2.0
   .. module load openmpi/mlnx/gcc/64/4.1.5a1
   .. module load cmake/3.21.4
+
+.. code-block:: bash
+
+
   # Needed for spack 
   source /home/<user>/spack/share/spack/setup-env.sh
   
@@ -128,6 +123,17 @@ Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`
   export PATH=$SPACK_ROOT/bin:$PATH
     
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
+
+
+Install the packages you will need for the SeisSol installation (using spack)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. code-block:: bash
+
+  spack install --add cmake
+  spack install python
+  spack install py-numpy
+  spack install py-scipy
+
 
 |
 |
