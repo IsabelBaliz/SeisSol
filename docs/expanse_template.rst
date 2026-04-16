@@ -78,6 +78,7 @@ After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be
 
 .. code-block:: bash
 
+  cd
   spack 
 
 should provide a list of spack commands and not ``bash: spack: command not found``.
