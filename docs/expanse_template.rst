@@ -45,11 +45,11 @@ Modify  ~/.spack/packages.yaml (or create if non-existing)
 .. code-block:: bash
 
   packages:
-  openmpi:
-   externals:
-   - spec: openmpi@4.1.5
-     prefix: /usr/mpi/gcc/openmpi-4.1.5a1
-     buildable: False
+    openmpi:
+     externals:
+     - spec: openmpi@4.1.5
+       prefix: /usr/mpi/gcc/openmpi-4.1.5a1
+       buildable: False
 
 
 Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.git>`_
