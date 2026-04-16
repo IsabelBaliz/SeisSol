@@ -74,7 +74,7 @@ to automatically add the two export lines in your ``~/.bashrc``, or add them man
 
 
     
-After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack commands. Whenever you exit and login again, you will have to source this (automatically if in your ``~/.bashrc``, manually when using a dedicated ``setup_spack_seissol.sh``).
+After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack commands. Whenever you exit and login again, you will have to source this (automatically if in your ``~/.bashrc``, manually when using a dedicated ``setup_spack_seissol.sh``) in order to use spack commands.
 
 .. code-block:: bash
 
