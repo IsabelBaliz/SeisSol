@@ -59,7 +59,15 @@ Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.
   cd
   git clone --recursive https://github.com/SeisSol/seissol-spack-aid.git
   cd $HOME/seissol-spack-aid
-  git pull origin master
+  
+Make SeisSol visible for Spack
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: bash
+
+  cd $HOME/seissol-spack-aid
+  spack repo add ./spack
+  
 
 
 Type the following to see all compilers avaliable for Spack
