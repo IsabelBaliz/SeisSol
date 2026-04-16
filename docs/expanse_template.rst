@@ -32,7 +32,7 @@ Load necessay modules
 
 Clone the `Spack repo <https://github.com/spack/spack.git>`_
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+make sure to remove repos.yaml files from previous installation (attempts).
 .. code-block:: bash
 
   git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
