@@ -60,7 +60,7 @@ to automatically add the two export lines in your ``~/.bashrc``, or add them man
 .. code-block:: bash
 
 
-  # Needed for spack 
+  # Needed for spack (if this isn't sourced, spack commands will be unknown)
   source /home/<user>/spack/share/spack/setup-env.sh
   
   module load gcc/10.2.0
