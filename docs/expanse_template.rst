@@ -98,7 +98,7 @@ Modify  ~/.spack/packages.yaml (or create if non-existing)
 
 
 Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.git>`_
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------------------------------------------
 
 .. code-block:: bash
 
