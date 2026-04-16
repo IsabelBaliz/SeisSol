@@ -97,6 +97,9 @@ Modify  ~/.spack/packages.yaml (or create if non-existing)
        buildable: False
 
 
+|
+|
+
 Clone the `seissol-spack-aid repo <https://github.com/SeisSol/seissol-spack-aid.git>`_
 --------------------------------------------------------------------------------------
 
