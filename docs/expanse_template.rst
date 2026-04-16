@@ -111,10 +111,21 @@ Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 .. code-block:: bash
 
+  .. source /home/<user>/spack/share/spack/setup-env.sh
+  .. module load gcc/10.2.0
+  .. module load openmpi/mlnx/gcc/64/4.1.5a1
+  .. module load cmake/3.21.4
+  # Needed for spack 
   source /home/<user>/spack/share/spack/setup-env.sh
+  
   module load gcc/10.2.0
   module load openmpi/mlnx/gcc/64/4.1.5a1
   module load cmake/3.21.4
+  
+  
+  # Needed for SeisSol
+  export SPACK_ROOT=/home/<user>/spack
+  export PATH=$SPACK_ROOT/bin:$PATH
     
 After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
 
