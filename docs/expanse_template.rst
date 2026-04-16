@@ -73,7 +73,7 @@ to automatically add the two export lines in your ``~/.bashrc``, or add them man
 
 
     
-After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
+After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack commands.
 
 Modify  ~/.spack/packages.yaml (or create if non-existing)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
