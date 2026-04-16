@@ -37,7 +37,8 @@ Clone the `Spack repo <https://github.com/spack/spack.git>`_
 
   git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
   cd spack
-
+  echo "export SPACK_ROOT=$PWD" >> $HOME/.bashrc
+  echo "export PATH=\$SPACK_ROOT/bin:\$PATH" >> $HOME/.bashrc
 
 Modify  ~/.spack/packages.yaml (or create if non-existing)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
