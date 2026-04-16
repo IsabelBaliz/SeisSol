@@ -48,10 +48,10 @@ you can use
   echo "export SPACK_ROOT=$PWD" >> $HOME/.bashrc
   echo "export PATH=\$SPACK_ROOT/bin:\$PATH" >> $HOME/.bashrc
   
-  .. source /home/<user>/spack/share/spack/setup-env.sh
-  .. module load gcc/10.2.0
-  .. module load openmpi/mlnx/gcc/64/4.1.5a1
-  .. module load cmake/3.21.4
+.. source /home/<user>/spack/share/spack/setup-env.sh
+.. module load gcc/10.2.0
+.. module load openmpi/mlnx/gcc/64/4.1.5a1
+.. module load cmake/3.21.4
 
 
 to automatically add the two export lines in your ``~/.bashrc``, or add them manually to the ``~/.bashrc`` or a ``setup_spack_seissol.sh`` file
