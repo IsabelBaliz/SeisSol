@@ -37,8 +37,43 @@ Clone the `Spack repo <https://github.com/spack/spack.git>`_
 
   git clone --depth 1 --branch v0.21.1 https://github.com/spack/spack.git
   cd spack
+
+
+Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`` file including)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+you can use 
+
+.. code-block:: bash
+
   echo "export SPACK_ROOT=$PWD" >> $HOME/.bashrc
   echo "export PATH=\$SPACK_ROOT/bin:\$PATH" >> $HOME/.bashrc
+  
+  .. source /home/<user>/spack/share/spack/setup-env.sh
+  .. module load gcc/10.2.0
+  .. module load openmpi/mlnx/gcc/64/4.1.5a1
+  .. module load cmake/3.21.4
+
+
+to automatically add the two export lines in your ``~/.bashrc``, or add them manually to the ``~/.bashrc`` or a ``setup_spack_seissol.sh`` file
+
+.. code-block:: bash
+
+
+  # Needed for spack 
+  source /home/<user>/spack/share/spack/setup-env.sh
+  
+  module load gcc/10.2.0
+  module load openmpi/mlnx/gcc/64/4.1.5a1
+  module load cmake/3.21.4
+  
+  
+  # Needed for spack
+  export SPACK_ROOT=/home/<user>/spack
+  export PATH=$SPACK_ROOT/bin:$PATH
+
+
+    
+After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
 
 Modify  ~/.spack/packages.yaml (or create if non-existing)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -99,30 +134,6 @@ This should show
   ...
 
 
-
-Update your ``~/.bashrc`` file as follows (or create a ``setup_spack_seissol.sh`` file including)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  .. source /home/<user>/spack/share/spack/setup-env.sh
-  .. module load gcc/10.2.0
-  .. module load openmpi/mlnx/gcc/64/4.1.5a1
-  .. module load cmake/3.21.4
-
-.. code-block:: bash
-
-
-  # Needed for spack 
-  source /home/<user>/spack/share/spack/setup-env.sh
-  
-  module load gcc/10.2.0
-  module load openmpi/mlnx/gcc/64/4.1.5a1
-  module load cmake/3.21.4
-  
-  
-  # Needed for spack
-  export SPACK_ROOT=/home/<user>/spack
-  export PATH=$SPACK_ROOT/bin:$PATH
-    
-After sourcing your ``~/.bashrc`` (or ``setup_spack_seissol.sh``), you should be able to use spack for all steps of the SeisSol installation.
 
 
 Install the packages you will need for the SeisSol installation (using spack)
