@@ -39,8 +39,8 @@ Clone the `Spack repo <https://github.com/spack/spack.git>`_
   cd spack
 
 
-Modify  ~/.spack/packages.yaml 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Modify  ~/.spack/packages.yaml or  ~/spack/packages.yaml (thought it should exist)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
